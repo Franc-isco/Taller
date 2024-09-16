@@ -9,7 +9,7 @@ class editorial:
         return self.__indice_editorial
 
     def obtener_nombre(self):
-        return self.__indice
+        return self.__nombre
 
     def obtener_telefono(self):
         return self.__telefono
