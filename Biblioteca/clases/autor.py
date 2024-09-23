@@ -1,24 +1,11 @@
 class autor:
-    def __init__(self, id_autor, nombre, obras, ISBN, indice_editorial):
-        self.__id_autor = id_autor
-        self.__nombre = nombre
-        self.__obras = obras
-        self.__ISBN = ISBN
-        self.__indice_editorial = indice_editorial
+    def __init__(self, id_autor, nombre_autor, seudonimo_autor, obras, isbn, id_editorial):
+        self.id_autor = id_autor
+        self.nombre_autor = nombre_autor
+        self.obras = obras
+        self.isbn = isbn
+        self.id_editorial = id_editorial
     
-    def obtener_id_autor(self):
-        return self.__id_autor
-    
-    def obtener_nombre(self):
-        return self.__nombre
-    
-    def obtener_obras(self):
-        return self.__obras
-    
-    def obtener_ISBN(self):
-        return self.__ISBN
-    
-    def obtener_indice_editorial(self):
-        return self.__indice_editorial
+
     
     

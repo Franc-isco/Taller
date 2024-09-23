@@ -1,19 +1,12 @@
+
+
 class editorial:
-    def __init__ (self, indice_editorial, nombre, telefono, ISBN):
-        self.__indice_editorial = indice_editorial
-        self.__nombre = nombre
-        self.__telefono = telefono
-        self.__ISBN = ISBN
+    def __init__ (self, id_editorial, nombre_editorial, telefono, correo):
+        self.id_editorial = id_editorial
+        self.nombre_editorial = nombre_editorial
+        self.telefono = telefono
+        self.correo = correo
     
-    def obtener_indice_editorial(self):
-        return self.__indice_editorial
 
-    def obtener_nombre(self):
-        return self.__nombre
-
-    def obtener_telefono(self):
-        return self.__telefono
-    
-    def obtener_ISBN(self):
-        return self.__ISBN
+        
     

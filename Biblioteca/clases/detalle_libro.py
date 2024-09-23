@@ -1,25 +1,17 @@
-class detalle_libro:
-    def __init__ (self, ISBN, categoria, numero_de_paginas, indice_editorial, id_autor):
-        self.__ISBN = ISBN
-        self.__categoria = categoria
-        self.__numero_de_paginas = numero_de_paginas
-        self.__indice_editorial = indice_editorial
-        self.__id_autor = id_autor
+import libro
+import editorial
+
+class detalle_libro(libro, editorial):
+    def __init__ (self, id_detalle, categoria, n_de_paginas, id_editorial, isbn, n_ejemplares, ejemplares_disponibles):
+        libro.__init__(isbn)
+        editorial.__init__(id_editorial)
+        self.id_detalle = id_detalle
+        self.isbn = isbn
+        self.categoria = categoria
+        self.n_de_paginas = n_de_paginas
+        self.id_editorial = id_editorial
         
-    def obtener_ISBN(self):
-        return self.__ISBN
-    
-    def obtener_categoria(self):
-        return self.__categoria
-    
-    def obtener_numero_de_paginas(self):
-        return self.__numero_de_paginas
-    
-    def obtener_indice_editorial(self):
-        return self.__indice_editorial
-    
-    def obtener_id_autor(self):
-        return self.__id_autor
+
     
     
     
