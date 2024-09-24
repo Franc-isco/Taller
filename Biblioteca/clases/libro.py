@@ -1,11 +1,11 @@
 import autor
 
-class libro(autor):
-    def __init__ (self, isbn, titulo, id_autor, n_de_copias):
-        self.__isbn = isbn,
-        self.__titulo = titulo,
-        self.__id_autor = id_autor,
-        self.__n_de_copias = n_de_copias
+class libro():
+    def __init__ (self, isbn, titulo, n_de_copias, año_publicacion):
+        self.isbn = isbn
+        self.titulo = titulo
+        self.n_de_copias = n_de_copias
+        self.año_publicacion = año_publicacion
 
         
 
