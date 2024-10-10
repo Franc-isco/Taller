@@ -11,7 +11,7 @@ class autor:
         self.fecha_nacimiento = fecha_nacimiento
         self.fecha_defuncion = fecha_defuncion
 
-    def fechas(fecha):
+    def convertir_fechas(self, fecha):
         fecha_dt = datetime.strptime(fecha, '%d/%m/%Y') #convierte la cadena fecha a un objeto datetime
         fecha_str = fecha_dt.strftime('%Y-%m-%d') #convierte el objeto datetima a una cadena
         return fecha_str

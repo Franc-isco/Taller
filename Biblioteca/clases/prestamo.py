@@ -17,3 +17,11 @@ class prestamo(detalle_libro, usuario):
     
     def calcular_fecha_devolucion(self, dias_prestamo):
         return self.f_prestamo + timedelta(days = dias_prestamo) #devuelve la nueva fecha de devolucion
+    
+class prestamofisico(prestamo):
+    def calcular_fecha_devolucion(self, dias_prestamo):
+        return super().calcular_fecha_devolucion(dias_prestamo + 2) #Agregamos 2 días extras al libro fisico
+
+class prestamodigital(prestamo):
+    def calcular_fecha_devolucion(self, dias_prestamo):
+        return super().calcular_fecha_devolucion(dias_prestamo + 1) #Agregamos un dia extra a libro digital

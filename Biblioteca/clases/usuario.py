@@ -17,12 +17,6 @@ class usuario:
         else:
             raise ValueError('El RUT es inválido.')
 
-    # def validar_rut(self, rut):
-    #     if rut_chile.validar(rut):
-    #         return rut
-    #     else:
-    #         raise ValueError('El RUT es inválido')
-
     def validar_correo(self, correo):
         patron_correo = r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
         if re.match(patron_correo, correo):
